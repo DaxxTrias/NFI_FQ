@@ -1,0 +1,123 @@
+{
+    "exchange": {
+        "name": "coinbasepro",
+        "pair_whitelist": [
+            "ETH/USD",
+            "FET/USD",
+            "REQ/USD",
+            "MATIC/USD",
+            "SOL/USD",
+            "ETC/USD",
+            "OMG/USD",
+            "MANA/USD",
+            "NKN/USD",
+            "ENJ/USD",
+            "CHZ/USD",
+            "WLUNA/USD",
+            "CLV/USD",
+            "AMP/USD",
+            "GTC/USD",
+            "QNT/USD",
+            "TRIBE/USD",
+            "ATOM/USD",
+            "POLY/USD",
+            "MLN/USD",
+            "MASK/USD",
+            "COTI/USD",
+            "ALGO/USD",
+            "RLY/USD",
+            "RLC/USD",
+            "CELO/USD",
+            "LPT/USD",
+            "BOND/USD",
+            "TRU/USD",
+            "SKL/USD",
+            "ACH/USD",
+            "EOS/USD",
+            "BAT/USD",
+            "SUSHI/USD",
+            "ANKR/USD",
+            // added 10-23-2021
+            "LINK/USD", 
+            "DOT/USD",
+            "AXS/USD",
+            "JASMY/USD",
+            "LTC/USD",
+            "AUCTION/USD",
+            // added 11-11-2021
+            "LRC/USD",
+            "ADA/USD",
+            "IOTX/USD",
+            "XYO/USD",
+            "XLM/USD",
+            "UMA/USD",
+            "AVAX/USD",
+            "GRT/USD",
+            "ICP/USD",
+            "SUKU/USD",
+            "UNI/USD",
+            "XTZ/USD",
+            "CRO/USD",
+            // added 12-11-2021
+            "FIL/USD",
+            "BCH/USD",
+            "CRV/USD",
+            "AAVE/USD",
+            "YFI/USD",
+            "MIR/USD",
+            "1INCH/USD",
+            "MKR/USD",
+            "COMP/USD",
+            "LCX/USD",
+            // added 03-29-2022
+            "RARI/USD",
+
+
+            // These ones are risky in that theyre relatively new listings and so unstable.
+            // (12-11-2021)
+            "COVAL/USD",
+            "GALA/USD",
+            "MDT/USD",
+            "SPELL/USD",
+            "ASM/USD",
+            "BICO/USD",
+            "BLZ/USD",
+            "KEEP/USD",
+            "VGX/USD",
+            // "BADGER/USD", They were hacked in november/december
+
+            // fuck these dogshit ass ponzis
+            // "CTSI/USD", 
+            // "DOGE/USD",
+            // "SHIB/USD",
+
+            // These tokens might work later but currently are so low volume its not worth using them. 
+            // (12-11-2021)
+            
+            // "BAL/USD",
+            // "SNX/USD",
+            // "OGN/USD",
+            // "REN/USD",
+            // "STORJ/USD",
+            // "ZRX/USD",
+            // "KNC/USD",
+            // "NU/USD",
+            // "OXT/USD",
+            "BAND/USD",
+            // "DASH/USD",
+            // "BNT/USD",
+            // "NMR/USD",
+            // "FORTH/USD",
+            // "WBTC/USD",
+            // "REP/USD",
+            
+            // 01-29-2022
+            
+            "SHPING/USD",
+            "MCO2/USD",
+            "PLU/USD",
+            "NCT/USD",
+            "ZEC/USD"
+        ]
+    }
+}
