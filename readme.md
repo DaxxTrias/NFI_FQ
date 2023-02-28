@@ -28,6 +28,11 @@ Once this is done it should be as simple as executing the docker launch
 docker-compose up
 ```
 
+If this does not work you should verify docker-compose is installed and setup
+
+* If using [Linux check this out](https://docs.docker.com/engine/install/linux-postinstall/)
+
+
 if you do not want the console to be captured for the duration of its run you can instead launch it with:
 
 ```

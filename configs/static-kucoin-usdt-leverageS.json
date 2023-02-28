@@ -1,0 +1,33 @@
+{
+    "exchange": {
+        "name": "kucoin",
+        "pair_whitelist": [
+            "BTC3S/USDT",
+            "ETH3S/USDT",
+            "ADA3S/USDT",
+            "EOS3S/USDT",
+            "XRP3S/USDT",
+            "LUNA3S/USDT",
+            "DOGE3S/USDT",
+            "SOL3S/USDT",
+            "LINK3S/USDT",
+            "DOT3S/USDT",
+            "ATOM3S/USDT",
+            "AXS3S/USDT",
+            "FTM3S/USDT",
+            "BNB3S/USDT",
+            "MATIC3S/USDT",
+            "SUSHI3S/USDT",
+            "NEAR3S/USDT",
+            "AAVE3S/USDT",
+            "SAND3S/USDT",
+            "AVAX3S/USDT",
+            "MANA3S/USDT",
+            "GALAX3S/USDT",
+            "H3RO3S/USDT",
+            "VET3S/USDT",
+            "BCH3S/USDT"
+            // "ONE3S/USDT"
+        ]
+    }
+}

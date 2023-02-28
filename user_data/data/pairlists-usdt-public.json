@@ -57,7 +57,7 @@
       {"method": "StaticPairList"}
   ],
   "telegram": {
-    "enabled": true,
+    "enabled": false,
     "token": "",
     "chat_id": "",
     "notification_settings": {
