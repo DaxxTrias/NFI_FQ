@@ -62,6 +62,7 @@ Be sure to edit the **docker-compose.yml** file for your specific situation. I h
 
 * In this example changing line 3 above to binanceus or bybit if you intend to dedicate to one of their specific exchanges.
 * Ideally you would want a custom config setup for each of the exchanges you intend to use the bot on
+  * lines 4-7 above are responsible for the bulk of inter-exchange operability
 
 ## Specific Exchange Config
 
@@ -82,7 +83,7 @@ In this above example the most important file is the **private.json** file which
 
 ```YAML
   "exchange": {
-      "name": "binanceus",
+      "name": "kucoin",
       "key": "yourkey",
       "secret": "yoursecret",
 ```
@@ -145,4 +146,6 @@ The following guides are from Freqtrade and can get you started with additional 
 [Freqtrade](https://www.freqtrade.io/en/stable/)
 
 [Nostalgia For Infinity X](https://github.com/iterativv/NostalgiaForInfinity)
+
+[NFI WIKI for quickly getting setup](https://github.com/iterativv/NostalgiaForInfinity/wiki)
 </div>
