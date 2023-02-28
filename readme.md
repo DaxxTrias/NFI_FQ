@@ -1,10 +1,10 @@
 # Freqtrade & NostalgiaForInfinityX
 
-Source material can be found here
+This github repository is currently targeting a single Freqtrade Bot with NFI. Will upload an alternate setup for multi-bots later; Source material can be found here
 
 [Freqtrade](https://www.freqtrade.io/en/stable/)
 
-[NFI](https://github.com/iterativv/NostalgiaForInfinity)
+[Nostalgia For Infinity X](https://github.com/iterativv/NostalgiaForInfinity)
 
 ## Pre-requisites
 
