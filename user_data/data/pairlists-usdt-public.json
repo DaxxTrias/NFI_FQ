@@ -1,0 +1,95 @@
+{
+  "max_open_trades": 6,
+  "stake_currency": "USDT",
+  "stake_amount": "unlimited",
+  "tradable_balance_ratio": 0.99,
+  "fiat_display_currency": "USD",
+  "position_adjustment_enable": false,
+  "dry_run": true,
+  "dry_run_wallet": 300,
+  "cancel_open_orders_on_exit": false,
+
+  "unfilledtimeout": {
+    "buy": 30,
+    "sell": 10,
+    "unit": "seconds"
+},
+  "bid_strategy": {
+      "price_side": "ask",
+      "ask_last_balance": 0.0,
+      "use_order_book": false,
+      "order_book_top": 1,
+      "check_depth_of_market": {
+          "enabled": false,
+          "bids_to_ask_delta": 1
+      }
+  },
+  "order_types": {
+    "buy": "market",
+    "sell": "market",
+    "emergencysell": "market",
+    "forcesell": "market",
+    "forcebuy": "market",
+    "stoploss": "market",
+    "stoploss_on_exchange": true
+  },
+  "ask_strategy": {
+      "price_side": "bid",
+      "use_order_book": false,
+      "order_book_min": 1,
+      "order_book_max": 1
+  },
+
+  "exchange": {
+      "name": "kucoin",
+      "key": "",
+      "secret": "",
+      "password": "",
+      "ccxt_config": {"enableRateLimit": true},
+      "ccxt_async_config": {
+          "enableRateLimit": true,
+          "rateLimit": 334
+      },
+      "pair_whitelist":[
+    ]
+  },
+  "pairlists": [
+      {"method": "StaticPairList"}
+  ],
+  "telegram": {
+    "enabled": true,
+    "token": "",
+    "chat_id": "",
+    "notification_settings": {
+      "status": "silent",
+      "warning": "on",
+      "startup": "silent",
+      "buy": "off",
+      "sell": "off",
+      "buy_cancel": "silent",
+      "sell_cancel": "silent",
+      "buy_fill": "on",
+      "sell_fill": "on"
+    }
+  },  
+  "api_server": {
+    "enabled": false,
+    "listen_ip_address": "0.0.0.0",
+    "listen_port": 8080,
+    "verbosity": "error",
+    "enable_openapi": false,
+    "jwt_secret_key": "yoursecret",
+    "CORS_origins": [],
+    "username": "yourname",
+    "password": "yourpass"
+},
+  "bot_name": "freqtrade-ku-usdt",
+  "initial_state": "running",
+  "forcebuy_enable": true,
+  "internals": {
+      "process_throttle_secs": 5
+  },
+
+  "dataformat_ohlcv": "jsongz",
+  "dataformat_trades": "jsongz"
+}

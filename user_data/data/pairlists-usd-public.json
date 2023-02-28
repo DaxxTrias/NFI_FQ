@@ -1,0 +1,104 @@
+{
+  "max_open_trades": 5,
+  "stake_currency": "USD",
+  "stake_amount": "unlimited",
+  "tradable_balance_ratio": 0.99,
+  "fiat_display_currency": "USD",
+  "position_adjustment_enable": true,
+  "dry_run": true,
+  "dry_run_wallet": 300,
+  "cancel_open_orders_on_exit": false,
+  "use_alt_rebuys": false,
+  "force_entry_enable": true,
+  "grinding_enable": true,
+
+  "unfilledtimeout": {
+    "entry": 30,
+    "exit": 10,
+    "exit_timeout_count": 0,
+    "unit": "seconds"
+},
+
+"entry_pricing": {
+  "price_side": "other",
+  "ask_last_balance": 0.0,
+  "use_order_book": false,
+  "order_book_top": 1,
+  "price_last_balance": 0.0,
+  "check_depth_of_market": {
+      "enabled": false,
+      "bids_to_ask_delta": 1
+  }
+},
+
+  "order_types": {
+    "entry": "market",
+    "exit": "market",
+    "emergency_exit": "market",
+    "force_exit": "market",
+    "force_entry": "market",
+    "stoploss": "market",
+    "stoploss_on_exchange": false,
+    "stoploss_on_exchange_interval": 60
+  },
+
+  "exit_pricing": {
+    "price_side": "other",
+    "use_order_book": false,
+    "price_last_balance": 0.0,
+    "order_book_min": 1,
+    "order_book_max": 1
+},
+
+  "exchange": {
+      "name": "binanceus",
+      "key": "yourkey",
+      "secret": "yoursecret",
+      "ccxt_config": {"enableRateLimit": true},
+      "ccxt_async_config": {
+          "enableRateLimit": true
+      },
+      "pair_whitelist":[
+    ]
+  },
+
+  "pairlists": [
+      {"method": "StaticPairList"}
+  ],
+
+  "telegram": {
+    "enabled": false,
+    "token": "yourtoken",
+    "chat_id": "yourchatid",
+    "notification_settings": {
+      "status": "silent",
+      "warning": "on",
+      "startup": "silent",
+      "entry": "off",
+      "exit": "off",
+      "entry_cancel": "silent",
+      "exit_cancel": "silent",
+      "entry_fill": "on",
+      "exit_fill": "on"
+    }
+  }, 
+  
+  "api_server": {
+    "enabled": false,
+    "listen_ip_address": "0.0.0.0",
+    "listen_port": 8070,
+    "verbosity": "error",
+    "enable_openapi": false,
+    "jwt_secret_key": "yoursecret",
+    "CORS_origins": ["http://localhost:8070"],
+    "username": "yourusername",
+    "password": "yourpassword"
+},
+  "bot_name": "freqtrade-usd",
+  "initial_state": "running",
+  "internals": {
+      "process_throttle_secs": 3
+  },
+  "dataformat_ohlcv": "jsongz",
+  "dataformat_trades": "jsongz"
+}
