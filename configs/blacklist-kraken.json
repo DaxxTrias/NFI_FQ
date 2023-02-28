@@ -1,0 +1,45 @@
+{
+    "exchange": {
+      "pair_blacklist": [
+        // Exchange specific pairs
+        // "1INCH/USD", // permission denied in US
+        // "ADA/USD", // 1d candles empty on oct-8-2021
+        // "ANKR/USD", // permission denied in US
+        // "BADGER/USD", // permission denied in US
+        // "CQT/USD", // this one is permission denied no trading in US
+        // "CTSI/USD", // permission denied in US
+        // "DYDX/USD", // permission denied in US
+        // "EWT/USD", // permission denied in US
+        // "GRT/USD", // permission denied in US
+        // "LINK/USD", // this one triggers kraken bot for some reason
+        // "LPT/USD", // permission denied in US
+        // "LRC/USD", // permission denied in US
+        // "MINA/USD", // permission denied in US
+        // "MIR/USD", // permission denied in US
+        // "MKR/USD", // permission denied in US
+        // "OGN/USD", // permission denied in US
+        // "PERP/USD", // permission denied in US
+        // "RARI/USD", // permission denied in US
+        // "REN/USD", // permission denied in US
+        // "SUSHI/USD", // permission denied in US
+        // "SDN/USD", // permission denied in US
+        // "TRX/USD", // this one triggers the bot for some reason
+        // "ZRX/USD", // permission denied in US
+        // "OXY/USD", // Do I even need to say? sigh
+        "ILA/USD",
+        "VR/USD", // junk p&d coin
+        
+        // Leverage
+        ".*(_PREMIUM|BEAR|BULL|HALF|HEDGE|UP|DOWN|[1235][SL])/.*",
+        // Fiat
+        "(AUD|BRZ|CAD|CHF|EUR|GBP|HKD|IDRT|JPY|NGN|RUB|SGD|TRY|UAH|USD|ZAR)/.*",
+        // Stable
+        "(BUSD|CUSD|CUSDT|DAI|PAXG|SUSD|TUSD|USDC|USDN|USDP|USDT|VAI|UST|USTC|AUSD)/.*",
+        // FAN
+        "(ACM|AFA|ALA|ALL|ALPINE|APL|ASR|ATM|BAR|CAI|CHZ|CITY|FOR|GAL|GOZ|IBFK|JUV|LEG|LOCK-1|NAVI|NMR|NOV|PFL|PSG|ROUSH|STV|TH|TRA|UCH|UFC|YBO)/.*",
+        // Others
+        "(1EARTH|ILA|BOBA|CTXC|CWAR|HBAR|NMR|OMG|ONG|ARDR|DMTR|MLS|TORN|ANC|LUNA|BTS|QKC|COS|ACA|FTT|SRM|YFII|SNM|BNX|WAVES|MIR)/.*"
+      ]
+    }
+  }
+  

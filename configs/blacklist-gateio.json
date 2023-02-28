@@ -1,0 +1,43 @@
+{
+    "exchange": {
+      "pair_blacklist": [
+        "CRTS/USDT",
+        "GARI/USDT", // junk coin
+        "OOKI/USDT", // junk coin
+        // "IMX/USDT",
+        "WOOP/USDT", // dead bot coin 
+        "CLV/USDT", // dead bot coin
+        "ILA/USDT",
+        "VR/USDT", // junk p&d coin
+        "PEOPLE/USDT", // coins official purpose is ended
+        // removing some coins to focus specifically on my leverage perp signals
+        "MOVR/USDT",
+        "MTS/USDT",
+        "XDC/USDT",
+        "LOKA/USDT",
+        "VRA/USDT",
+        "XCAD/USDT",
+        "RACA/USDT",
+        "RAD/USDT",
+        "MIR/USDT",
+        "AKRO/USDT",
+        "BLOK/USDT",
+        "LUNA/USDT",
+        "KINT/USDT",
+        "SOLR/USDT",
+        // Exchange Tokens
+        "(GT|POINT)/.*",
+        // Leverage tokens
+        ".*(3L|3S|5L|5S)/.*",
+        // Fiat
+        "(AUD|BRZ|CAD|CHF|EUR|GBP|HKD|IDRT|JPY|NGN|RUB|SGD|TRY|UAH|USD|ZAR)/.*",
+        // Stable tokens
+        "(BUSD|CUSD|CUSDT|DAI|PAXG|SUSD|TUSD|USDC|USDN|USDP|USDT|VAI|UST|USDD|USDJ|USTC|AUSD)/.*",
+        // FAN Tokens
+        "(ACM|AFA|ALA|ALL|ALPINE|APL|ASR|ATM|BAR|CAI|CITY|FOR|GAL|GOZ|IBFK|JUV|LEG|LOCK-1|NAVI|NMR|NOV|PFL|PSG|ROUSH|STV|TH|TRA|UCH|UFC|YBO|ARG)/.*",
+        // Other Coins
+        "(AMPL|1EARTH|ILA|BOBA|CWAR|MEM|AMPL|OMG|XYM|CARR|SGB|SKEY|KLV|KOK|DMTR|CPOOL|KRL|MLS|SB|CEL|WWY|PTS|TORN|BANK|SYLO|VR|DOME|ANC|LUNA|REDTOKEN|COS|NFTY|EPK|ZBC|AZY|ZCX|PLATO|ACA|XCN|FTT|SRM|BVT|SWP|YFII|XWG|PIAS|KICKS|TIME|BNX|WEMIX|WAVES|MIR|FCON)/.*"
+    ]
+    }
+  }
+  
