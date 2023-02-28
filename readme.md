@@ -1,10 +1,6 @@
 # Freqtrade & NostalgiaForInfinityX
 
-This github repository is currently targeting a single Freqtrade Bot with NFI. Will upload an alternate setup for multi-bots later; Source material can be found here
-
-[Freqtrade](https://www.freqtrade.io/en/stable/)
-
-[Nostalgia For Infinity X](https://github.com/iterativv/NostalgiaForInfinity)
+This github repository is currently targeting a single Freqtrade Bot with NFI. Will upload an alternate setup for multi-bots later; Source material can be found below
 
 ## Pre-requisites
 
@@ -24,7 +20,7 @@ pip --version
 ```
 
 This should provide you feedback indicating a version # if its installed properly.
-If its not installed you can go [here](https://pip.pypa.io/en/stable/installation/) for addtl help
+If its not installed you can go [here for addtl help](https://pip.pypa.io/en/stable/installation/)
 
 Once this is done it should be as simple as executing the docker launch
 
@@ -44,7 +40,7 @@ Provided you are fine with running this under docker, you do not need to install
 
 ## General Configuration
 
-Be sure to edit the **docker-compose.yml** file for your specific situation. I have included some sample files to get you started but it defaults to Kucoin for example, so you will need to adjust this yourself
+Be sure to edit the **docker-compose.yml** file for your specific situation. I have included some sample files to get you started however it defaults to Kucoin, so you will need to adjust this yourself for other exchanges. It also won't work out of the box since I did not private a *private.json file, read more about that below.
 
 ```YAML
       --logfile user_data/logs/freqtrade.log
@@ -56,12 +52,12 @@ Be sure to edit the **docker-compose.yml** file for your specific situation. I h
       --strategy NostalgiaForInfinityX
 ```
 
-* For example changing line 3 above to binanceus or bybit if you intend to dedicate to a specific exchange.
-* Ideally you would want a custom config setup for each of the exchanges you intend to trade on
+* For example changing line 3 above to binanceus or bybit if you intend to dedicate to one of their specific exchanges.
+* Ideally you would want a custom config setup for each of the exchanges you intend to use the bot on
 
 ## Specific Exchange Config
 
-There are generally 3 files that change from exchange to exchange (these are my names, you dont have to use my names get creative)
+There are generally 3 files that change from exchange to exchange (these are my names, you dont have to use my names you should get creative)
 
 ```
 * pairlists-usd-private.json
@@ -69,7 +65,7 @@ There are generally 3 files that change from exchange to exchange (these are my 
 * blacklist-kucoin.json
 ```
 
-In this above example the most important file is the **private.json** file which houses the core configuration setup. Inside it are various settings which need to be modified on a per-user per-bot basis. I **do not** provide you with a **private json file**, you will need to take a public file and make a copy of it named private, or edit the **docker-compose.yml** file to point to the public one.
+In this above example the most important file is the **private.json** file which houses the core configuration setup. Inside it are various settings which need to be modified on a per-user & per-bot basis. I **do not** provide you with a **private json file**, you will need to take a public file and make a copy of it and name it private, or edit the **docker-compose.yml** file to point to the public one after you have made your edits.
 
 ```YAML
   "exchange": {
@@ -107,12 +103,12 @@ In this section you would change enabled to true and provide a token and id code
 
 In this section you can change settings related to the WEB API so you can monitor from the browser dashboard utilizing [FreqUI](https://github.com/freqtrade/freqtrade/blob/develop/docs/rest-api.md)
 
-The important settings to change are the **listen_port**, **jwt_secret_key**, and the **username** & **password** fields
+* The important settings to change here are the **listen_port**, **jwt_secret_key**, and the **username** & **password** fields
 
-If running multiple bots you want them to all point to the same CORS Origin so you only have to visit 1 browser address to manage all of them
+* If running multiple bots you want them to all point to the same CORS Origin so you only have to visit 1 browser address to manage all of them
 
 
-## Docker Documentation & Guides
+## Docker Documentation & other Guides
 
 The following guides are from Freqtrade and can get you started with additional learning materials related to Docker & Freqtrade (To assist you with doing customizations)
 
@@ -121,3 +117,7 @@ The following guides are from Freqtrade and can get you started with additional 
 [Rest API for Web](https://www.freqtrade.io/en/latest/rest-api/)
 
 [Telegram](https://www.freqtrade.io/en/latest/telegram-usage/)
+
+[Freqtrade](https://www.freqtrade.io/en/stable/)
+
+[Nostalgia For Infinity X](https://github.com/iterativv/NostalgiaForInfinity)
