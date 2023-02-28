@@ -1,6 +1,6 @@
 # Freqtrade & NostalgiaForInfinityX
 
-This github repository is currently targeting a single Freqtrade Bot with NFI. Will upload an alternate setup for multi-bots later; Source material can be found below
+This github repository is currently targeting a single Freqtrade Bot with NFI. Will upload an alternate setup for multi-bots later
 
 ## Pre-requisites
 
@@ -30,10 +30,12 @@ docker-compose up
 
 If this does not work you should verify docker-compose is installed and setup
 
-* If using [Linux check this out](https://docs.docker.com/engine/install/linux-postinstall/)
+* addtl resources here for [docker-compose](https://dockerlabs.collabnix.com/intermediate/workshop/DockerCompose/How_to_Install_Docker_Compose.html)
+
+* If using Linux [check this out](https://docs.docker.com/engine/install/linux-postinstall/)
 
 
-if you do not want the console to be captured for the duration of its run you can instead launch it with the daemon parameter:
+if you do not want the console to be captured for the duration of its runtime you can instead launch it with the daemon parameter:
 
 ```
 docker-compose up -d
@@ -41,7 +43,7 @@ docker-compose up -d
 
 ### Notes
 
-Provided you are fine with running this under **Docker**, you do not need to install the normal requirements to run Freqtrade since docker will automate it for you courtesy of other files in this repo. Please see the requirements.txt file in the main [Freqtrade Repo](https://github.com/freqtrade/freqtrade/blob/develop/requirements.txt) if you wish to run this outside of **Docker**.
+Provided you are fine with running this under **Docker**, you do not need to install the normal requirements to run Freqtrade since docker will automate it for you courtesy of other [files](../docker/docker/Dockerfile.custom) in this repo. Please see the requirements.txt file in the main [Freqtrade Repo](https://github.com/freqtrade/freqtrade/blob/develop/requirements.txt) if you wish to run this outside of **Docker**.
 
 ## General Configuration
 
@@ -52,7 +54,7 @@ Be sure to edit the **docker-compose.yml** file for your specific situation. I h
       --logfile user_data/logs/freqtrade.log
       --db-url sqlite:////freqtrade/user_data/tradesv3.sqlite
       --datadir user_data/data/${EXCHANGE:-kucoin}
-      --config user_data/data/pairlists-usd-private.json
+      --config user_data/data/pairlists-usdt-private.json
       --config configs/pairlist-volume-kucoin-usdt.json
       --config configs/blacklist-kucoin.json
       --strategy NostalgiaForInfinityX
