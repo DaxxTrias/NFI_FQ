@@ -5,6 +5,7 @@ This github repository is currently targeting a single Freqtrade Bot with NFI. W
 ## Pre-requisites
 
 * [Docker](https://www.docker.com/products/docker-desktop/)
+  * [Docker-Compose](https://docs.docker.com/compose/compose-file/)
 
 * [Python](https://www.python.org/downloads/)
 
