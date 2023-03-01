@@ -124,6 +124,8 @@ In this section you would change enabled to true and provide a token and id code
     "password": "yourpassword"
 ```
 
+* If you have issues with the API server not working after filling out settings try changing **listen_ip_address** to 127.0.0.1 some pc setups demand it this way for security reasons
+
 In this section you can change settings related to the WEB API so you can monitor from the browser dashboard utilizing [FreqUI](https://github.com/freqtrade/freqtrade/blob/develop/docs/rest-api.md)
 
 * The important settings to change here are the **listen_port**, **jwt_secret_key**, and the **username** & **password** fields
