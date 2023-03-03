@@ -11,7 +11,6 @@ This github repository is currently targeting a single Freqtrade Bot with NFI. W
 
 * [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) if using Windows
 
-
 ## Installation
 
 Once you have Python installed make sure pip is also installed
@@ -35,7 +34,6 @@ If this does not work you should verify docker-compose is installed and setup
 
 * If using Linux [check this out](https://docs.docker.com/engine/install/linux-postinstall/)
 
-
 if you do not want the console to be captured for the duration of its runtime you can instead launch it with the daemon parameter:
 
 ```
@@ -44,14 +42,18 @@ docker-compose up -d
 
 ### Notes
 
-Provided you are fine with running this under **Docker**, you do not need to install the normal requirements to run Freqtrade since docker will automate it for you courtesy of other [files](../docker/docker/Dockerfile.custom) in this repo. Please see the requirements.txt file in the main [Freqtrade Repo](https://github.com/freqtrade/freqtrade/blob/develop/requirements.txt) if you wish to run this outside of **Docker**.
+Provided you are fine with running this under **Docker**, you do not need to install the normal requirements to run Freqtrade since docker will automate it for you courtesy of other [files](../docker/docker/Dockerfile.custom) in this repo. Please see **requirements.txt** file in the main [Freqtrade Repo](https://github.com/freqtrade/freqtrade/blob/develop/requirements.txt) if you wish to run this outside of **Docker**.
 
 ## General Configuration
 
 Be sure to edit the **docker-compose.yml** file for your specific situation. I have included some sample files to get you started however it defaults to Kucoin, so you will need to adjust this yourself for other exchanges. It also won't work out of the box since I did not include a ***private.json** file, read more about that below.
 
+<div align="center">
+
 > Docker-Compose.yml
-```YAML 
+</div>
+
+```YAML
       --logfile user_data/logs/freqtrade.log
       --db-url sqlite:////freqtrade/user_data/tradesv3.sqlite
       --datadir user_data/data/${EXCHANGE:-kucoin}
@@ -125,14 +127,13 @@ In this section you would change enabled to true and provide a token and id code
     "password": "yourpassword"
 ```
 
-* If you have issues with the API server not working after filling out settings try **uncommenting** the two lines relating to ports in the **docker-compose.yml** file
+* If you have issues with the API server not working after filling out the settings try **uncommenting** the two lines relating to ports in the **docker-compose.yml** file
 
 In this section you can change settings related to the WEB API so you can monitor from the browser dashboard utilizing [FreqUI](https://github.com/freqtrade/freqtrade/blob/develop/docs/rest-api.md)
 
 * The important settings to change here are the **listen_port**, **jwt_secret_key**, and the **username** & **password** fields
 
 * If running multiple bots you want them to all point to the same CORS Origin so you only have to visit 1 browser address to manage all of them
-
 
 ## Docker Documentation & other Guides
 
