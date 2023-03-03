@@ -13,9 +13,15 @@ This github repository is currently targeting a single Freqtrade Bot with NFI. W
 
 ## Installation
 
+#
+
+Install **Docker** and **Python**
+
+* if you have difficulties installing Docker on Windows it might be related to your Hypervisor not being enabled. (Might have a virtualization bios setting turned off)
+
 Once you have Python installed make sure pip is also installed
 
-```
+```shell
 pip --version
 ```
 
@@ -24,7 +30,7 @@ If its not installed you can go [here for addtl help](https://pip.pypa.io/en/sta
 
 Once this is done it should be as simple as executing the docker launch
 
-```
+```shell
 docker-compose up
 ```
 
@@ -36,7 +42,7 @@ If this does not work you should verify docker-compose is installed and setup
 
 if you do not want the console to be captured for the duration of its runtime you can instead launch it with the daemon parameter:
 
-```
+```shell
 docker-compose up -d
 ```
 
