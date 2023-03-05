@@ -26,7 +26,7 @@ services:
       --logfile user_data/logs/freqtrade.log
       --db-url sqlite:////freqtrade/user_data/tradesv3.sqlite
       --datadir user_data/data/${EXCHANGE:-kucoin}
-      --config user_data/data/pairlists-usdt-private.json
+      --config user_data/data/pairlists-usdt-public.json
       --config configs/pairlist-volume-kucoin-usdt.json
       --config configs/blacklist-kucoin.json
       --strategy NostalgiaForInfinityX

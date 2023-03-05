@@ -143,7 +143,7 @@ In this section you can change settings related to the WEB API so you can monito
 
 ## Docker Documentation & other Guides
 
-The following guides are from Freqtrade and can get you started with additional learning materials related to Docker & Freqtrade (To assist you with doing customizations)
+The following guides / sources can get you started with additional learning materials related to Docker & Freqtrade (To assist you with doing customizations)
 
 <div align="center">
 
@@ -158,4 +158,7 @@ The following guides are from Freqtrade and can get you started with additional 
 [Nostalgia For Infinity X](https://github.com/iterativv/NostalgiaForInfinity)
 
 [NFI WIKI for quickly getting setup](https://github.com/iterativv/NostalgiaForInfinity/wiki)
+
+[Docker and WSL2 vs Hyper-V](https://docs.docker.com/desktop/windows/wsl/)
+
 </div>

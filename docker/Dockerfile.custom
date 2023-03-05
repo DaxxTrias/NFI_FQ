@@ -1,5 +1,10 @@
+#################
+#This will pull the Freqtrade stable branch
+#################
+
 FROM freqtradeorg/freqtrade:stable
 
+##TODO: see if vanessa has a newer version or if this is still relevent for auto-update
 #grabbing strat from web
 #ADD https://raw.githubusercontent.com/iterativv/NostalgiaForInfinity/main/NostalgiaForInfinityNext.py /freqtrade/user_data/strategies/docker-grab/
 #VOLUME /freqtrade/user_data/strategies/docker-grab/
