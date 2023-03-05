@@ -51,7 +51,7 @@
 },
 
   "exchange": {
-      "name": "kucoin",
+      "name": "bybit",
       "key": "",
       "secret": "",
       "password": "",
@@ -93,7 +93,7 @@
     "username": "yourname",
     "password": "yourpass"
 },
-  "bot_name": "kucoin-usdt",
+  "bot_name": "bybit-usdt",
   "initial_state": "running",
   "internals": {
       "process_throttle_secs": 5
