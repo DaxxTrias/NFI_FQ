@@ -94,7 +94,7 @@
     "username": "yourusername",
     "password": "yourpassword"
 },
-  "bot_name": "freqtrade-usd",
+  "bot_name": "binanceus-usd",
   "initial_state": "running",
   "internals": {
       "process_throttle_secs": 3

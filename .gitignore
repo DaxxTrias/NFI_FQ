@@ -1,5 +1,6 @@
 # Freqtrade rules
 config*.json
+*private.json
 *.sqlite*
 logfile.txt
 user_data/logs/*

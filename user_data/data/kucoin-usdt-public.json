@@ -4,41 +4,51 @@
   "stake_amount": "unlimited",
   "tradable_balance_ratio": 0.99,
   "fiat_display_currency": "USD",
-  "position_adjustment_enable": false,
+  "position_adjustment_enable": true,
   "dry_run": true,
   "dry_run_wallet": 300,
   "cancel_open_orders_on_exit": false,
+  "use_alt_rebuys": false,
+  "force_entry_enable": true,
+  "grinding_enable": true,
 
   "unfilledtimeout": {
-    "buy": 30,
-    "sell": 10,
+    "entry": 30,
+    "exit": 10,
+    "exit_timeout_count": 0,
     "unit": "seconds"
 },
-  "bid_strategy": {
-      "price_side": "ask",
-      "ask_last_balance": 0.0,
-      "use_order_book": false,
-      "order_book_top": 1,
-      "check_depth_of_market": {
-          "enabled": false,
-          "bids_to_ask_delta": 1
-      }
-  },
+
+  "entry_pricing": {
+  "price_side": "other",
+  "ask_last_balance": 0.0,
+  "use_order_book": false,
+  "order_book_top": 1,
+  "price_last_balance": 0.0,
+  "check_depth_of_market": {
+      "enabled": false,
+      "bids_to_ask_delta": 1
+  }
+},
+
   "order_types": {
-    "buy": "market",
-    "sell": "market",
-    "emergencysell": "market",
-    "forcesell": "market",
-    "forcebuy": "market",
+    "entry": "market",
+    "exit": "market",
+    "emergency_exit": "market",
+    "force_exit": "market",
+    "force_entry": "market",
     "stoploss": "market",
-    "stoploss_on_exchange": true
+    "stoploss_on_exchange": false,
+    "stoploss_on_exchange_interval": 60
   },
-  "ask_strategy": {
-      "price_side": "bid",
-      "use_order_book": false,
-      "order_book_min": 1,
-      "order_book_max": 1
-  },
+
+  "exit_pricing": {
+    "price_side": "other",
+    "use_order_book": false,
+    "price_last_balance": 0.0,
+    "order_book_min": 1,
+    "order_book_max": 1
+},
 
   "exchange": {
       "name": "kucoin",
@@ -64,14 +74,15 @@
       "status": "silent",
       "warning": "on",
       "startup": "silent",
-      "buy": "off",
-      "sell": "off",
-      "buy_cancel": "silent",
-      "sell_cancel": "silent",
-      "buy_fill": "on",
-      "sell_fill": "on"
+      "entry": "off",
+      "exit": "off",
+      "entry_cancel": "silent",
+      "exit_cancel": "silent",
+      "entry_fill": "on",
+      "exit_fill": "on"
     }
   },  
+
   "api_server": {
     "enabled": false,
     "listen_ip_address": "0.0.0.0",
@@ -83,9 +94,8 @@
     "username": "yourname",
     "password": "yourpass"
 },
-  "bot_name": "freqtrade-ku-usdt",
+  "bot_name": "kucoin-usdt",
   "initial_state": "running",
-  "forcebuy_enable": true,
   "internals": {
       "process_throttle_secs": 5
   },
