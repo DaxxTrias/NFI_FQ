@@ -5,8 +5,8 @@ services:
     ### select targeting image (develop has newer features, more bugs)
     ### plotting branch is for extensive backtesting / machine learning hyperopt
     image: freqtradeorg/freqtrade:stable
-    # image: freqtradeorg/freqtrade:develop
-    # image: freqtradeorg/freqtrade:develop_plot
+    #image: freqtradeorg/freqtrade:develop
+    #image: freqtradeorg/freqtrade:develop_plot
 
     ### Build step - only needed when additional dependencies are needed
     build:

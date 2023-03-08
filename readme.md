@@ -13,8 +13,6 @@ This github repository is currently targeting a single Freqtrade Bot with NFI. W
 
 ## Installation
 
-#
-
 Install **Docker** and **Python**
 
 * if you have difficulties installing Docker on Windows it might be related to your Hypervisor not being enabled. (Might have a virtualization bios setting turned off)
@@ -69,9 +67,8 @@ Be sure to edit the **docker-compose.yml** file for your specific situation. I h
       --strategy NostalgiaForInfinityX
 ```
 
-* In this example changing line 3 above to binanceus or bybit if you intend to dedicate to one of their specific exchanges.
 * Ideally you would want a custom config setup for each of the exchanges you intend to use the bot on
-  * lines 4-7 above are responsible for the bulk of inter-exchange operability
+  * lines 2-7 above are responsible for the bulk of inter-exchange operability
 
 ## Specific Exchange Config
 
