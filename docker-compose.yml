@@ -29,9 +29,9 @@ services:
     command: >
       trade
       --logfile user_data/logs/freqtrade.log
-      --db-url sqlite:////freqtrade/user_data/tradesv3.sqlite
-      --datadir user_data/data/${EXCHANGE:-kucoin}
-      --config user_data/data/kucoin-usdt-private.json
-      --config configs/volumefilter-kucoin-usdt.json
-      --config configs/blacklist-kucoin.json
+      --db-url sqlite:////freqtrade/user_data/tradesv3-okx.sqlite
+      --datadir user_data/data/${EXCHANGE:-okx}
+      --config user_data/data/okx-usdt-private.json
+      --config configs/volumefilter-okx-usdt.json
+      --config configs/blacklist-okx.json
       --strategy NostalgiaForInfinityX
