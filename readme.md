@@ -11,6 +11,8 @@ This github repository is currently targeting a single Freqtrade Bot with NFI. W
 
 * [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) if using Windows
 
+- - - -
+
 ## Installation
 
 Install **Docker** and **Python**
@@ -44,9 +46,13 @@ if you do not want the console to be captured for the duration of its runtime yo
 docker-compose up -d
 ```
 
+- - - -
+
 ### Notes
 
 Provided you are fine with running this under **Docker**, you do not need to install the normal requirements to run Freqtrade since docker will automate it for you courtesy of other [files](../docker/docker/Dockerfile.custom) in this repo. Please see **requirements.txt** file in the main [Freqtrade Repo](https://github.com/freqtrade/freqtrade/blob/develop/requirements.txt) if you wish to run this outside of **Docker**.
+
+- - - -
 
 ## General Configuration
 
@@ -69,6 +75,8 @@ Be sure to edit the **docker-compose.yml** file for your specific situation. I h
 
 * Ideally you would want a custom config setup for each of the exchanges you intend to use the bot on
   * lines 2-7 above are responsible for the bulk of inter-exchange operability
+
+- - - -
 
 ## Specific Exchange Config
 
@@ -110,7 +118,7 @@ If using a dry-run (which is what **this repo defaults to**) you do not need to 
     "chat_id": "yourchatid",
 ```
 
-In this section you would change enabled to true and provide a token and id code for your telegram bot. Token would be the unique identifier of the bot itself when you create the bot, chatid would be your own personal identifier. [Read more here](https://github.com/freqtrade/freqtrade/blob/develop/docs/telegram-usage.md)
+In this section you would change enabled to true and provide a token and id code for your telegram bot. Token would be the unique identifier of the telegram bot itself when you create the bot with botfather, chatid would be your own personal telegram identifier. [Read more here](https://github.com/freqtrade/freqtrade/blob/develop/docs/telegram-usage.md)
 
 <div align="center">
 
@@ -137,6 +145,8 @@ In this section you can change settings related to the WEB API so you can monito
 * The important settings to change here are the **listen_port**, **jwt_secret_key**, and the **username** & **password** fields
 
 * If running multiple bots you want them to all point to the same CORS Origin so you only have to visit 1 browser address to manage all of them
+
+- - - -
 
 ## Docker Documentation & other Guides
 
