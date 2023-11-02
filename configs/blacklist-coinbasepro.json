@@ -1,0 +1,21 @@
+{
+  "exchange": {
+    "pair_blacklist": [
+      "SOUL/USD", // anything that trends opposite of bitcoin scares me. 
+      // stable coins
+      "DAI/USD",
+      "UST/USD",
+      "USDT/USD",
+      "BUSD/USD",
+      "OMG/USD",
+      "BOBA/USD",
+      "CWAR/USD", // junk coin that ignores bitcoin up yet follows it hard down
+      "CLV/USD", // nothing but bots pvping
+      "1EARTH/USD",
+      "ILA/USD",
+      "VR/USD", // junk p&d coin
+      "SUPER/USD", // junk coin dead for months at a time
+      "VGX/USD", // voyager coin, stay away from this scam
+    ]
+  }
+}

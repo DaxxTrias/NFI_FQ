@@ -26,6 +26,7 @@
         // "TRX/USD", // this one triggers the bot for some reason
         // "ZRX/USD", // permission denied in US
         // "OXY/USD", // Do I even need to say? sigh
+        "WBTC/USD", // dont need this junk
         "ILA/USD",
         "VR/USD", // junk p&d coin
         
