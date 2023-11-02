@@ -50,7 +50,9 @@ docker-compose up -d
 
 ### Notes
 
-Provided you are fine with running this under **Docker**, you do not need to install the normal requirements to run Freqtrade since docker will automate it for you courtesy of other [files](../docker/docker/Dockerfile.custom) in this repo. Please see **requirements.txt** file in the main [Freqtrade Repo](https://github.com/freqtrade/freqtrade/blob/develop/requirements.txt) if you wish to run this outside of **Docker**.
+* Provided you are fine with running this under **Docker**, you do not need to install the normal requirements to run Freqtrade since docker will automate it for you courtesy of other [files](../docker/docker/Dockerfile.custom) in this repo. 
+* Please see **requirements.txt** file in the main [Freqtrade Repo](https://github.com/freqtrade/freqtrade/blob/develop/requirements.txt) if you wish to run this outside of **Docker**.
+* Please make sure you have Docker Version 1.13 or newer or you might not be able to run this docker compose file properly. [Read more here](https://docs.docker.com/compose/compose-file/compose-versioning/#version-13)
 
 - - - -
 
@@ -65,15 +67,15 @@ Be sure to edit the **docker-compose.yml** file for your specific situation. I h
 
 ```YAML
       --logfile user_data/logs/freqtrade.log
-      --db-url sqlite:////freqtrade/user_data/tradesv3.sqlite
+      --db-url sqlite:////freqtrade/user_data/tradesv3-kucoin.sqlite
       --datadir user_data/data/${EXCHANGE:-kucoin}
-      --config user_data/data/pairlists-usdt-private.json
-      --config configs/pairlist-volume-kucoin-usdt.json
+      --config user_data/data/kucoin-usdt-private.json
+      --config configs/volumefilter-kucoin-usdt.json
       --config configs/blacklist-kucoin.json
       --strategy NostalgiaForInfinityX
 ```
 
-* Ideally you would want a custom config setup for each of the exchanges you intend to use the bot on
+* Ideally you would want a custom config setup for each of the exchanges you intend to use the bot on or have multiple different 'services' in the docker file
   * lines 2-7 above are responsible for the bulk of inter-exchange operability
 
 - - - -
@@ -82,7 +84,7 @@ Be sure to edit the **docker-compose.yml** file for your specific situation. I h
 
 There are generally 3 files that change from exchange to exchange (these are my names, you dont have to use my names you should get creative)
 
-```
+```txt
 * pairlists-usd-private.json
 * pairlist-volume-kucoin-usd.json
 * blacklist-kucoin.json
