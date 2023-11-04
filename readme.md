@@ -1,6 +1,6 @@
 # Freqtrade & NostalgiaForInfinityX
 
-This github repository is currently targeting a single Freqtrade Bot with NFI. Will upload an alternate setup for multi-bots later
+This github repository is currently targeting OKX with 4 different bot strategies.
 
 ## Pre-requisites
 
@@ -66,8 +66,8 @@ Be sure to edit the **docker-compose.yml** file for your specific situation. I h
 </div>
 
 ```YAML
-      --logfile user_data/logs/freqtrade.log
-      --db-url sqlite:////freqtrade/user_data/tradesv3-kucoin.sqlite
+      --logfile user_data/logs/nfi-kucoin.log
+      --db-url sqlite:////freqtrade/user_data/nfi-kucoin.sqlite
       --datadir user_data/data/${EXCHANGE:-kucoin}
       --config user_data/data/kucoin-usdt-private.json
       --config configs/volumefilter-kucoin-usdt.json
@@ -129,7 +129,7 @@ In this section you would change enabled to true and provide a token and id code
 
 ```YAML
   "api_server": {
-    "enabled": false,
+    "enabled": true,
     "listen_ip_address": "0.0.0.0",
     "listen_port": 8070,
     "verbosity": "error",
@@ -145,6 +145,7 @@ In this section you would change enabled to true and provide a token and id code
 In this section you can change settings related to the WEB API so you can monitor from the browser dashboard utilizing [FreqUI](https://github.com/freqtrade/freqtrade/blob/develop/docs/rest-api.md)
 
 * The important settings to change here are the **listen_port**, **jwt_secret_key**, and the **username** & **password** fields
+  * Be careful using 0.0.0.0 if hosting this on a public server, you might want to change this to a specific IP address instead.
 
 * If running multiple bots you want them to all point to the same CORS Origin so you only have to visit 1 browser address to manage all of them
 

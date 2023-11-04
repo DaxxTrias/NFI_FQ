@@ -22,14 +22,14 @@ services:
     ### Please read the https://www.freqtrade.io/en/latest/rest-api/ documentation
     ### before enabling this.
     #ports:
-    #   - "127.0.0.1:8078:8078"
+    #   - "127.0.0.1:8070:8070"
 
 
     ### Default command used when running `docker compose up`
     command: >
       trade
-      --logfile user_data/logs/freqtrade.log
-      --db-url sqlite:////freqtrade/user_data/tradesv3-okx.sqlite
+      --logfile user_data/logs/nfi.log
+      --db-url sqlite:////freqtrade/user_data/nfi-okx.sqlite
       --datadir user_data/data/${EXCHANGE:-okx}
       --config user_data/data/okx-usdt-private.json
       --config configs/pairlist-volume-okx-usdt.json
@@ -56,14 +56,14 @@ services:
     ### Please read the https://www.freqtrade.io/en/latest/rest-api/ documentation
     ### before enabling this.
     #ports:
-    #   - "127.0.0.1:8078:8078"
+    #   - "127.0.0.1:8071:8071"
 
 
     ### Default command used when running `docker compose up`
     command: >
       trade
-      --logfile user_data/logs/freqtrade.log
-      --db-url sqlite:////freqtrade/user_data/tradesv3-nfi2-okx.sqlite
+      --logfile user_data/logs/nfi2.log
+      --db-url sqlite:////freqtrade/user_data/nfi2-okx.sqlite
       --datadir user_data/data/${EXCHANGE:-okx}
       --config user_data/data/okx-usdt-private.json
       --config configs/pairlist-volume-okx-usdt.json
@@ -90,14 +90,14 @@ services:
     ### Please read the https://www.freqtrade.io/en/latest/rest-api/ documentation
     ### before enabling this.
     #ports:
-    #   - "127.0.0.1:8078:8078"
+    #   - "127.0.0.1:8073:8073"
 
 
     ### Default command used when running `docker compose up`
     command: >
       trade
-      --logfile user_data/logs/freqtrade.log
-      --db-url sqlite:////freqtrade/user_data/tradesv3-nfi3-okx.sqlite
+      --logfile user_data/logs/nfi3.log
+      --db-url sqlite:////freqtrade/user_data/nfi3-okx.sqlite
       --datadir user_data/data/${EXCHANGE:-okx}
       --config user_data/data/okx-usdt-private.json
       --config configs/pairlist-volume-okx-usdt.json
@@ -124,14 +124,14 @@ services:
     ### Please read the https://www.freqtrade.io/en/latest/rest-api/ documentation
     ### before enabling this.
     #ports:
-    #   - "127.0.0.1:8078:8078"
+    #   - "127.0.0.1:8074:8074"
 
 
     ### Default command used when running `docker compose up`
     command: >
       trade
-      --logfile user_data/logs/freqtrade.log
-      --db-url sqlite:////freqtrade/user_data/tradesv3-nfi4-okx.sqlite
+      --logfile user_data/logs/nfi4.log
+      --db-url sqlite:////freqtrade/user_data/nfi4-okx.sqlite
       --datadir user_data/data/${EXCHANGE:-okx}
       --config user_data/data/okx-usdt-private.json
       --config configs/pairlist-volume-okx-usdt.json
