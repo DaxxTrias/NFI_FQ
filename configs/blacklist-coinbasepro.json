@@ -16,6 +16,8 @@
       "VR/USD", // junk p&d coin
       "SUPER/USD", // junk coin dead for months at a time
       "VGX/USD", // voyager coin, stay away from this scam
+      "MEME/USD", 
+      "TOKEN/USD",
     ]
   }
 }
