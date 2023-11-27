@@ -17,7 +17,8 @@ This github repository is currently targeting OKX with 4 different bot strategie
 
 Install **Docker** and **Python**
 
-* if you have difficulties installing Docker on Windows it might be related to your Hypervisor not being enabled. (Might have a virtualization bios setting turned off)
+* if you have difficulties installing Docker on Windows it might be related to your Hypervisor not being enabled.
+  * You can [read more here](https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)
 
 Once you have Python installed make sure pip is also installed
 
@@ -26,7 +27,7 @@ pip --version
 ```
 
 This should provide you feedback indicating a version # if its installed properly.
-If its not installed you can go [here for addtl help](https://pip.pypa.io/en/stable/installation/)
+If its not installed you can go [here to get it](https://pip.pypa.io/en/stable/installation/)
 
 Once this is done it should be as simple as executing the docker launch
 
