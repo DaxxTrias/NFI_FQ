@@ -77,7 +77,7 @@ Be sure to edit the **docker-compose.yml** file for your specific situation. I h
 ```
 
 * Ideally you would want a custom config setup for each of the exchanges you intend to use the bot on or have multiple different 'services' in the docker file
-  * lines 2-7 above are responsible for the bulk of inter-exchange operability
+  * lines 3-7 above are responsible for the bulk of inter-exchange operability
 
 - - - -
 
@@ -91,7 +91,7 @@ There are generally 3 files that change from exchange to exchange (these are my 
 * blacklist-kucoin.json
 ```
 
-In this above example the most important file is the **private.json** file which houses the core configuration setup. Inside it are various settings which need to be modified on a per-user & per-bot basis. I **do not** provide you with a **private json file**, you will need to take a public file and make a copy of it and name it private, or edit the **docker-compose.yml** file to point to the public one after you have made your edits.
+In this above example the most important file is the **private.json** file which houses the core configuration setup. Inside it are various settings which need to be modified on a per-user & per-bot basis. I **do not** provide you with a **private json file**, you will need to take a public file and make a copy of it and name it private, or edit the **docker-compose.yml** file to point to the public file instead.
 
 <div align="center">
 
@@ -111,7 +111,7 @@ If using a dry-run (which is what **this repo defaults to**) you do not need to 
 
 <div align="center">
 
-> pairlists-kucoin-usdt-private.json
+> pairlists-kucoin-usdt-private.json - Telegram Section
 </div>
 
 ```YAML
@@ -121,11 +121,11 @@ If using a dry-run (which is what **this repo defaults to**) you do not need to 
     "chat_id": "yourchatid",
 ```
 
-In this section you would change enabled to true and provide a token and id code for your telegram bot. Token would be the unique identifier of the telegram bot itself when you create the bot with botfather, chatid would be your own personal telegram identifier. [Read more here](https://github.com/freqtrade/freqtrade/blob/develop/docs/telegram-usage.md)
+In this section you would change enabled to true and provide a token and id code for your telegram bot if you wish to use the Telegram Bot interface for controlling your bot remotely. **Token** would be the unique identifier of the telegram bot itself when you create the bot with **Botfather**, **chatid** would be your own personal telegram UID#. [Read more here](https://github.com/freqtrade/freqtrade/blob/develop/docs/telegram-usage.md)
 
 <div align="center">
 
-> pairlists-kucoin-usdt-private.json
+> pairlists-kucoin-usdt-private.json - FreqUI interface
 </div>
 
 ```YAML
