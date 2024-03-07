@@ -51,7 +51,7 @@ docker-compose up -d
 
 ### Notes
 
-* Provided you are fine with running this under **Docker**, you do not need to install the normal requirements to run Freqtrade since docker will automate it for you courtesy of other [files](../docker/docker/Dockerfile.custom) in this repo. 
+* Provided you are fine with running this under **Docker**, you do not need to install the normal requirements to run Freqtrade since docker will automate it for you courtesy of other [files](../docker/Dockerfile.custom) in this repo. 
 * Please see **requirements.txt** file in the main [Freqtrade Repo](https://github.com/freqtrade/freqtrade/blob/develop/requirements.txt) if you wish to run this outside of **Docker**.
 * Please make sure you have Docker Version 1.13 or newer or you might not be able to run this docker compose file properly. [Read more here](https://docs.docker.com/compose/compose-file/compose-versioning/#version-13)
 
@@ -67,12 +67,12 @@ Be sure to edit the **docker-compose.yml** file for your specific situation. I h
 </div>
 
 ```YAML
-      --logfile user_data/logs/nfi-kucoin.log
-      --db-url sqlite:////freqtrade/user_data/nfi-kucoin.sqlite
-      --datadir user_data/data/${EXCHANGE:-kucoin}
-      --config user_data/data/kucoin-usdt-private.json
-      --config configs/volumefilter-kucoin-usdt.json
-      --config configs/blacklist-kucoin.json
+      --logfile user_data/logs/nfi-okx.log
+      --db-url sqlite:////freqtrade/user_data/nfi-okx.sqlite
+      --datadir user_data/data/${EXCHANGE:-OKX}
+      --config user_data/data/okx-usdt-private.json
+      --config configs/pairlist-volume-okx-usdt.json
+      --config configs/blacklist-okx.json
       --strategy NostalgiaForInfinityX
 ```
 
@@ -86,32 +86,32 @@ Be sure to edit the **docker-compose.yml** file for your specific situation. I h
 There are generally 3 files that change from exchange to exchange (these are my names, you dont have to use my names you should get creative)
 
 ```txt
-* pairlists-usd-private.json
-* pairlist-volume-kucoin-usd.json
-* blacklist-kucoin.json
+* okx-usdt-private.json
+* pairlist-volume-okx-usdt.json
+* blacklist-okx.json
 ```
 
 In this above example the most important file is the **private.json** file which houses the core configuration setup. Inside it are various settings which need to be modified on a per-user & per-bot basis. I **do not** provide you with a **private json file**, you will need to take a public file and make a copy of it and name it private, or edit the **docker-compose.yml** file to point to the public file instead.
 
 <div align="center">
 
-> pairlists-kucoin-usdt-private.json
+> okx-usdt-private.json
 </div>
 
 ```YAML
   "exchange": {
-      "name": "kucoin",
+      "name": "okx",
       "key": "yourkey",
       "secret": "yoursecret",
 ```
 
-The most important section is this one. you need to set the appropriate name for your exchange. **binance** vs **binanceus** vs **kucoin** vs **bybit** etc
+The most important section is this one. you need to set the appropriate name for your exchange. **binance** || **binanceus** || **kucoin** || **bybit** || **okx** etc
 
 If using a dry-run (which is what **this repo defaults to**) you do not need to supply a key & secret, since its all just pretend anyway. The keys are needed only if you want the bot to actually trade with real funds. [Read more here](https://github.com/freqtrade/freqtrade/blob/develop/docs/exchanges.md)
 
 <div align="center">
 
-> pairlists-kucoin-usdt-private.json - Telegram Section
+> okx-usdt-private.json - Telegram Section
 </div>
 
 ```YAML
@@ -125,7 +125,7 @@ In this section you would change enabled to true and provide a token and id code
 
 <div align="center">
 
-> pairlists-kucoin-usdt-private.json - FreqUI interface
+> okx-usdt-private.json - FreqUI interface
 </div>
 
 ```YAML
