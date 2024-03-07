@@ -59,7 +59,7 @@ docker-compose up -d
 
 ## General Configuration
 
-Be sure to edit the **docker-compose.yml** file for your specific situation. I have included some sample files to get you started however it defaults to Kucoin, so you will need to adjust this yourself for other exchanges. It also won't work out of the box since I did not include a ***private.json** file, read more about that below.
+Be sure to edit the **docker-compose.yml** file for your specific situation. I have included some sample files to get you started however it defaults to OKX, so you will need to adjust this yourself for other exchanges. It also won't work out of the box since I did not include a ***private.json** file, read more about that below.
 
 <div align="center">
 
