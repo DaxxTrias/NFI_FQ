@@ -51,7 +51,7 @@ docker-compose up -d
 
 ### Notes
 
-* Provided you are fine with running this under **Docker**, you do not need to install the normal requirements to run Freqtrade since docker will automate it for you courtesy of other [files](../docker/Dockerfile.custom) in this repo. 
+* Provided you are fine with running this under **Docker**, you do not need to install the normal requirements to run Freqtrade since docker will automate it for you courtesy of other [files](../master/docker/Dockerfile.custom) in this repo.
 * Please see **requirements.txt** file in the main [Freqtrade Repo](https://github.com/freqtrade/freqtrade/blob/develop/requirements.txt) if you wish to run this outside of **Docker**.
 * Please make sure you have Docker Version 1.13 or newer or you might not be able to run this docker compose file properly. [Read more here](https://docs.docker.com/compose/compose-file/compose-versioning/#version-13)
 
