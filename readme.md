@@ -49,6 +49,22 @@ docker-compose up -d
 
 - - - -
 
+## Updating Freqtrade (Post Install)
+
+* Freqtrade gets updates frequently, and sometimes updates to strategies require those updates to be applied in order to run properly. To update the bot you can run the following command:
+
+```shell
+docker-compose pull && docker-compose build
+```
+
+Sometimes an image will be locked and you will need to remove it before you can pull the new image. You can do this with the following command:
+
+```shell
+docker rmi freqtrade/freqtrade:stable && docker-compose pull && docker-compose build
+```
+
+- - - -
+
 ### Notes
 
 * Provided you are fine with running this under **Docker**, you do not need to install the normal requirements to run Freqtrade since docker will automate it for you courtesy of other [files](../master/docker/Dockerfile.custom) in this repo.
